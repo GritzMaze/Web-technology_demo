@@ -4,6 +4,7 @@ import { TrafficModule } from './traffic/TrafficModule';
 import { DrivineModule, DrivineModuleOptions } from '@liberation-data/drivine/DrivineModule';
 import { DatabaseRegistry } from '@liberation-data/drivine/connection/DatabaseRegistry';
 import { MovieModule } from '@/movies/MovieModule';
+import { SubwayModule } from '@/subway/SubwayModule';
 
 @Module({
     imports: [
@@ -12,7 +13,8 @@ import { MovieModule } from '@/movies/MovieModule';
         }),
         HealthModule,
         MovieModule,
-        TrafficModule
+        TrafficModule,
+        SubwayModule
     ],
     controllers: [],
     providers: []
